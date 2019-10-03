@@ -1,0 +1,72 @@
+{
+  "name": "use-memory-storage",
+  "version": "0.0.1",
+  "description": "React hooks for memory storage is sharing session storage between multiple tabs.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && mkdirp dist && rollup -c",
+    "lint": "eslint -c .eslintrc.js --fix './src/**/*.ts{,x}'",
+    "prepare": "npm run precommit && npm run build",
+    "precommit": "npm run lint"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "memory storage",
+    "shared storage",
+    "session storage",
+    "local storage"
+  ],
+  "author": "wonism <yocee57@gmail.com> (https://wonism.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonism/use-memory-storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wonism/use-memory-storage/issues"
+  },
+  "homepage": "https://github.com/wonism/use-memory-storage#readme",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.10.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/runtime-corejs2": "^7.6.2",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.5.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.1.1",
+    "husky": "^3.0.7",
+    "mkdirp": "^0.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.10.1",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.22.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {}
+}
