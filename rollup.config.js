@@ -16,7 +16,10 @@ const config = {
   }],
   external: Object.keys(pkg.peerDependencies),
   plugins: [
-    typescript(),
+    typescript({
+      typescript: require('typescript'),
+      objectHashIgnoreUnknownHack: true,
+    }),
     terser(),
     nodeResolve({
       jsnext: true,
